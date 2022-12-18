@@ -19,7 +19,8 @@ public class code {
             while(rs.next()){
                 String pp_no = rs.getString("pp_no");
                 String gra_id = rs.getString("gra_id");
-                System.out.println(pp_no + ", " +gra_id);
+                String proj_id = rs.getString("proj_id");
+                System.out.println(pp_no + ", " +gra_id+ ", " +proj_id);
             }
         } catch (SQLException sqlE) {
             sqlE.printStackTrace();
