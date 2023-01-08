@@ -41,7 +41,7 @@ public class AceDAOImpl extends DAOBase implements AceDAO{
             }
         }
     }
-    private static final String ACE_UPDATE_SQL = "UPDATE academic_exchange SET VALUES(?,?,?,?,?,?,?,?,?) WHERE ace_no = ?";
+    private static final String ACE_UPDATE_SQL = "UPDATE academic_exchange SET ace_no=?,gra_id=?,ace_name=?,ace_place=?,ace_date=?,ace_CHname=?,ace_ENname=?,ace_pic=?,ace_note=? WHERE ace_no = ?";
     @Override
     public void updateAce(Academic_exchange ace) {
         Connection con = null;
